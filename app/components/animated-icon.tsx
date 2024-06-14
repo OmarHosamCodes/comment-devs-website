@@ -3,7 +3,12 @@ import { IconArrowBadgeDownFilled } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
 const AnimatedIcon = () => {
-  const handelOnClick = () => {};
+  const handelOnClick = () => {
+    const el = document.getElementById("mail");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <motion.div
       className="white" // Apply any Tailwind CSS classes here
